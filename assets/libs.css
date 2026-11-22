@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+:root{--paper:#f3eadf;--paper2:#e9ddcf;--ink:#2c201f;--wine:#401d28;--wine2:#542a35;--muted:#786b63;--line:#d9cbbd;--gold:#b38b5d}
+*{box-sizing:border-box}
+body{margin:0!important;background:var(--paper)!important;color:var(--ink)!important;font-family:'DM Sans',Arial,sans-serif!important;line-height:1.6}
+header{position:sticky;top:0;z-index:30;background:#f7f0e8!important;color:var(--ink)!important;padding:18px clamp(20px,6vw,72px)!important;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:0 1px 0 rgba(45,30,25,.12)!important}
+header>div:first-child{font-family:'Playfair Display',Georgia,serif;font-size:23px!important;letter-spacing:4px;font-weight:500!important;color:var(--ink)}
+header nav{display:flex;align-items:center;gap:clamp(12px,2.5vw,32px);flex-wrap:wrap}
+header nav a,header a{color:var(--ink)!important;text-decoration:none!important;font-size:12px;font-weight:600;letter-spacing:1px;margin:0!important;transition:color .2s}
+header nav a:hover{color:#956b58!important}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif!important;font-weight:400!important;color:var(--wine)!important;line-height:1.15}
+main,.container,.sirkulasi-container{max-width:1180px!important;margin:44px auto!important;padding:0 28px!important}
+button,.btn,.add-btn{background:var(--wine)!important;color:#fff!important;border:0!important;border-radius:0!important;padding:12px 18px!important;font-size:11px!important;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer}
+button:hover,.btn:hover,.add-btn:hover{background:#68404a!important}
+input,select,textarea{background:#fffaf4!important;border:1px solid var(--line)!important;border-radius:0!important;padding:12px!important;color:var(--ink)!important}
+table{background:#fffaf4!important;border-collapse:collapse!important;box-shadow:none!important;border-radius:0!important}
+th{background:var(--wine)!important;color:#fff!important;font-size:11px!important;letter-spacing:1px;text-transform:uppercase}
+td,th{padding:14px!important;border-bottom:1px solid var(--line)!important}
+tr:hover{background:#f4e9dd!important}
+.form-box,.menu-card,.card,.modal-content{background:#fffaf4!important;border:1px solid var(--line)!important;border-radius:0!important;box-shadow:0 8px 24px rgba(50,30,25,.06)!important}
+.alert{border-radius:0!important}
+footer{color:var(--muted)!important;text-align:center;padding:32px!important;border-top:1px solid var(--line);font-size:11px;letter-spacing:1px}
+@media(max-width:700px){header{align-items:flex-start;flex-direction:column;padding:16px 20px!important}header nav{gap:14px}.form-grid{grid-template-columns:1fr!important}main,.container,.sirkulasi-container{padding:0 18px!important;margin:28px auto!important}table{display:block;overflow-x:auto}}
+
+/* ===== HEADER SERAGAM (dipakai lewat header.php di semua halaman) ===== */
+header.lb-header{position:sticky!important;top:0;z-index:30;background:#faf4ec!important;color:#2c201f!important;border-bottom:1px solid #dfd0c1!important;box-shadow:none!important;padding:16px clamp(20px,6vw,76px)!important;display:flex!important;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;box-sizing:border-box}
+header.lb-header .lb-brand{display:flex!important;align-items:center;gap:22px;white-space:nowrap;text-decoration:none!important;margin:0!important;color:#2c201f!important}
+header.lb-header .lb-name{font:500 26px/1 'Playfair Display',Georgia,serif!important;letter-spacing:3px;color:#2c201f!important}
+header.lb-header .lb-dot{font:400 16px/1 'DM Sans',sans-serif;color:#b38b5d}
+header.lb-header .lb-tag{font:600 10px/1 'DM Sans',sans-serif!important;letter-spacing:2.6px;color:#956b58!important;padding-top:0}
+header.lb-header .lb-nav{display:flex;align-items:center;gap:clamp(14px,2.5vw,32px);flex-wrap:wrap}
+header.lb-header .lb-nav a{color:#2c201f!important;text-decoration:none!important;font:600 11px 'DM Sans',sans-serif!important;letter-spacing:1px!important;margin:0!important;padding:0 0 5px!important;border-bottom:1px solid transparent;transition:color .2s}
+header.lb-header .lb-nav a:hover{color:#b38b5d!important}
+header.lb-header .lb-nav a.active{color:#401d28!important;border-bottom-color:#401d28}
+@media(max-width:700px){header.lb-header{align-items:flex-start!important;flex-direction:column!important;padding:16px 20px!important}header.lb-header .lb-nav{gap:14px}header.lb-header .lb-brand{gap:14px;flex-wrap:wrap}header.lb-header .lb-name{font-size:23px!important}header.lb-header .lb-tag{font-size:9px!important;letter-spacing:1.8px}}
+@media print{header.lb-header{display:none!important}}
